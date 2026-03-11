@@ -1,0 +1,27 @@
+{
+  "name": "debox-community",
+  "version": "1.1.0",
+  "description": "DeBox community skill for group lookup, membership checks, profile reports, and automation-friendly verification.",
+  "main": "scripts/debox-community.js",
+  "bin": {
+    "debox-community": "./scripts/debox-community.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --check scripts/debox-community.js"
+  },
+  "keywords": [
+    "debox",
+    "web3",
+    "community",
+    "openclaw",
+    "skill"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}

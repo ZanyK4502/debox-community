@@ -1,0 +1,6 @@
+{
+  "apiKey": "your-debox-api-key-here",
+  "defaultGroupUrl": "https://m.debox.pro/group?id=your-group-id",
+  "defaultChainId": 1,
+  "defaultBatchDelayMs": 650
+}
