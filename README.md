@@ -488,4 +488,6 @@ npm test
 
 这个项目是在真实排错、真实调试、真实社区验证需求中一点点改出来的。
 
- 如果你也在折腾 OpenClaw Skill、DeBox 社区自动化、或者 Web3 社区工具，欢迎交流。
+ 如果你也在折腾 OpenClaw Skill、DeBox 社区自动化、或者 Web3 社区工具，欢迎交流。  
+ 
+ [**Debox 官方开发者文档**](https://docs.debox.pro/zh/UserGuide)     [**OpenClaw 官方开发者文档**](https://docs.openclaw.ai/) 
