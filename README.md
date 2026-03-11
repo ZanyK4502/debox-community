@@ -191,29 +191,29 @@ node scripts/debox-community.js --json
 
 ### 1）查询群组信息
 
-```bash
-node scripts/debox-community.js info \
-  --url "https://m.debox.pro/group?id=xxxxx"
+```text
+用 debox-community 帮我查这个 DeBox 群的信息：
+https://m.debox.pro/group?id=xxxxx
 ```
 
 
 
 2）验证成员是否在群
 
-```bash
-node scripts/debox-community.js check-member \
-  --wallet "0xabc..." \
-  --group-url "https://m.debox.pro/group?id=xxxxx"
+```text
+用 debox-community 验证这个钱包是不是这个群的成员：
+钱包地址：0xabc...
+群链接：https://m.debox.pro/group?id=xxxxx
 ```
 
 
 
 3）查询投票统计
 
-```bash
-node scripts/debox-community.js vote-stats \
-  --wallet "0xabc..." \
-  --group-url "https://m.debox.pro/group?id=xxxxx"
+```text
+用 debox-community 查询这个钱包在这个群里的投票统计：
+钱包地址：0xabc...
+群链接：https://m.debox.pro/group?id=xxxxx
 ```
 
 
@@ -222,10 +222,10 @@ node scripts/debox-community.js vote-stats \
 
 4）查询抽奖统计
 
-```bash
-node scripts/debox-community.js lottery-stats \
-  --wallet "0xabc..." \
-  --group-url "https://m.debox.pro/group?id=xxxxx"
+```text
+用 debox-community 查询这个钱包在这个群里的抽奖统计：
+钱包地址：0xabc...
+群链接：https://m.debox.pro/group?id=xxxxx
 ```
 
 
@@ -234,12 +234,12 @@ node scripts/debox-community.js lottery-stats \
 
 5）综合验证
 
-```bash
-node scripts/debox-community.js verify \
-  --wallet "0xabc..." \
-  --group-url "https://m.debox.pro/group?id=xxxxx" \
-  --min-votes 1 \
-  --min-lotteries 1
+```text
+用 debox-community 做综合验证：
+钱包地址：0xabc...
+群链接：https://m.debox.pro/group?id=xxxxx
+最少投票数：1
+最少抽奖数：1
 ```
 
 
@@ -278,8 +278,8 @@ node scripts/debox-community.js batch-verify \
 7）生成文字版个人报告
 
 ```bash
-node scripts/debox-community.js profile \
-  --user-id "your_user_id"
+用 debox-community 生成这个 user_id 的个人报告：
+user_id：xxxxx
 ```
 
 
@@ -287,19 +287,10 @@ node scripts/debox-community.js profile \
 8）生成图片版个人报告
 
 ```bash
-node scripts/debox-community.js profile \
-  --user-id "your_user_id" \
-  --image
+用 debox-community 生成这个 user_id 的图片个人报告：
+user_id：xxxxx
 ```
 
-指定输出文件名
-
-```bash
-node scripts/debox-community.js profile \
-  --user-id "your_user_id" \
-  --image \
-  --output "my-profile.png"
-```
 
 
 
@@ -468,4 +459,5 @@ npm test
  如果你也在折腾 OpenClaw Skill、DeBox 社区自动化、或者 Web3 社区工具，欢迎交流。  
  
  [**Debox 官方开发者文档**](https://docs.debox.pro/zh/UserGuide)     [**OpenClaw 官方开发者文档**](https://docs.openclaw.ai/) 
+
 
