@@ -216,14 +216,7 @@ node scripts/debox-community.js vote-stats \
   --group-url "https://m.debox.pro/group?id=xxxxx"
 ```
 
-JSON 输出：
 
-```bash
-node scripts/debox-community.js vote-stats \
-  --wallet "0xabc..." \
-  --group-url "https://m.debox.pro/group?id=xxxxx" \
-  --json
-```
 
 
 
@@ -235,14 +228,7 @@ node scripts/debox-community.js lottery-stats \
   --group-url "https://m.debox.pro/group?id=xxxxx"
 ```
 
-JSON 输出：
 
-```bash
-node scripts/debox-community.js lottery-stats \
-  --wallet "0xabc..." \
-  --group-url "https://m.debox.pro/group?id=xxxxx" \
-  --json
-```
 
 
 
@@ -256,16 +242,7 @@ node scripts/debox-community.js verify \
   --min-lotteries 1
 ```
 
-JSON 输出：
 
-```bash
-node scripts/debox-community.js verify \
-  --wallet "0xabc..." \
-  --group-url "https://m.debox.pro/group?id=xxxxx" \
-  --min-votes 1 \
-  --min-lotteries 1 \
-  --json
-```
 
 
 
@@ -491,3 +468,4 @@ npm test
  如果你也在折腾 OpenClaw Skill、DeBox 社区自动化、或者 Web3 社区工具，欢迎交流。  
  
  [**Debox 官方开发者文档**](https://docs.debox.pro/zh/UserGuide)     [**OpenClaw 官方开发者文档**](https://docs.openclaw.ai/) 
+
