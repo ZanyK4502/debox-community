@@ -4,7 +4,6 @@
 
 这个项目的目标不是做一个花哨的 demo，而是提供一套 **能真正用于社区运营和成员筛查** 的 DeBox 工具链。
 
----
 
 ## 这个 Skill 能做什么？
 
@@ -26,7 +25,6 @@
 - 快速查看用户在群内的投票 / 抽奖参与情况
 - 生成可展示的个人数据海报
 
----
 
 ## 功能概览
 
@@ -51,7 +49,7 @@
 ### 7）图片版个人报告
 根据 `user_id` 生成图片版个人报告，适合展示和分享。
 
----
+
 
 ## 项目结构
 
@@ -79,7 +77,7 @@ debox-community/
 - `references/api.md`：DeBox API 参考资料
 - `scripts/debox-community.js`：主脚本，负责实际功能执行
 
-------
+
 
 ## 环境要求
 
@@ -88,7 +86,7 @@ debox-community/
 - OpenClaw
 - 可用的 **DeBox API Key**
 
-------
+
 
 ## 安装方式
 
@@ -107,7 +105,7 @@ cd ~/.openclaw/workspace/skills/debox-community
 npm install
 ```
 
-------
+
 
 ## 配置方式
 
@@ -136,7 +134,7 @@ cp config.example.json config.json
 }
 ```
 
-------
+
 
 ## 在 OpenClaw 中启用
 
@@ -165,7 +163,7 @@ openclaw gateway restart
 
 然后在 Dashboard 的 Skills 页面里确认它处于 `eligible` 状态。
 
-------
+
 
 ## 命令行用法
 
@@ -187,7 +185,7 @@ node scripts/debox-community.js
 node scripts/debox-community.js --json
 ```
 
-------
+
 
 ## 使用示例
 
@@ -198,7 +196,7 @@ node scripts/debox-community.js info \
   --url "https://m.debox.pro/group?id=xxxxx"
 ```
 
-------
+
 
 2）验证成员是否在群
 
@@ -208,7 +206,7 @@ node scripts/debox-community.js check-member \
   --group-url "https://m.debox.pro/group?id=xxxxx"
 ```
 
-------
+
 
 3）查询投票统计
 
@@ -227,7 +225,7 @@ node scripts/debox-community.js vote-stats \
   --json
 ```
 
-------
+
 
 4）查询抽奖统计
 
@@ -246,7 +244,7 @@ node scripts/debox-community.js lottery-stats \
   --json
 ```
 
-------
+
 
 5）综合验证
 
@@ -269,7 +267,7 @@ node scripts/debox-community.js verify \
   --json
 ```
 
-------
+
 
 6）批量验证
 
@@ -298,7 +296,7 @@ node scripts/debox-community.js batch-verify \
   --delay-ms 650
 ```
 
-------
+
 
 7）生成文字版个人报告
 
@@ -307,7 +305,7 @@ node scripts/debox-community.js profile \
   --user-id "your_user_id"
 ```
 
-------
+
 
 8）生成图片版个人报告
 
@@ -326,7 +324,7 @@ node scripts/debox-community.js profile \
   --output "my-profile.png"
 ```
 
-------
+
 
 ## JSON 输出示例
 
@@ -379,7 +377,7 @@ node scripts/debox-community.js profile \
 }
 ```
 
-------
+
 
 关于 `user_id`
 
@@ -393,7 +391,7 @@ node scripts/debox-community.js profile \
 
 这一点需要根据 DeBox 的实际接口与账户体系来处理。
 
-------
+
 
 ## 常见问题
 
@@ -405,7 +403,7 @@ node scripts/debox-community.js profile \
 
 配置好后重启 OpenClaw，并刷新 Skills 页面。
 
-------
+
 
 ### 2）为什么明明参与过投票/抽奖，却显示 0？
 
@@ -423,7 +421,7 @@ node scripts/debox-community.js profile \
 - API Key 是否有效
 - DeBox 接口返回是否发生变化
 
-------
+
 
 ### 3）为什么上传 GitHub 时不能带 `node_modules/`？
 
@@ -435,7 +433,7 @@ node scripts/debox-community.js profile \
 - 真实 API key
 - 测试输出图片
 
-------
+
 
 ## 开发说明
 
@@ -457,7 +455,7 @@ node --check scripts/debox-community.js
 npm test
 ```
 
-------
+
 
 ## 目前状态
 
@@ -471,7 +469,7 @@ npm test
 - 优化图片生成逻辑，避免固定临时文件冲突
 - 重写 `SKILL.md`，更适合 OpenClaw 自动调用
 
-------
+
 
 ## 注意事项
 
@@ -484,9 +482,10 @@ npm test
 
 如果你的 API Key 已经暴露，请尽快去 DeBox 开发者后台重置。
 
-------
+
 
 ## 致谢
 
 这个项目是在真实排错、真实调试、真实社区验证需求中一点点改出来的。
+
  如果你也在折腾 OpenClaw Skill、DeBox 社区自动化、或者 Web3 社区工具，欢迎交流。
